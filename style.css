@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(163,221,235);
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+    padding-block: 40px;
+}
+.ul1{
+    width: 10%;
+    padding-left: 40px;
+}
+.ul1 img{
+    width: 120px;
+}
+.ul2{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    color: gray;
+}
+.ul2 span{
+    color: black;
+    font-weight: 600;
+}
+.ul3{
+    width: 20%;
+
+}
+.ul3 button{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-weight: 500;
+}
+.text-part{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(163,221,235);
+}
+ .text-part h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.text-part p{
+    text-align: center;
+    margin-top: 15px;
+    color: gray;
+}
+ .text-part button{
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(225, 176, 14);
+    border: none;
+    font-weight: 500;
+}
+.img-section{
+    width: 100%;
+    height: 400px;
+    background-image: url(./assets/newbg.avif);
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
+@media (max-width: 768px){
+    .main-container{
+        width: 100%;
+        height: auto;
+    }
+    .navbar{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .ul2{
+        display: none;
+    }
+    
+    .ul1{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ul3{
+        width: 25%;
+    }
+    .text-part{
+        width: 100%;
+        height: auto;
+    }
+    .text-part h1{
+        text-align: center;
+    }
+    .text-part p{
+        text-align: center;
+    }
+    .img-section{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+    }
+}
